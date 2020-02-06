@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Tokoin_TestCode' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'IQKeyboardManager'
+
+  # Pods for Tokoin_TestCode
+
+  target 'Tokoin_TestCodeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Tokoin_TestCodeUITests' do
+    # Pods for testing
+  end
+
+end

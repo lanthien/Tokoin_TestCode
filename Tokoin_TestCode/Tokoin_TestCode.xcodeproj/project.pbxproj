@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26538E4570858A9AD25A6512 /* Pods_Tokoin_TestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FECAE9F51DD167BDD4D8FE8 /* Pods_Tokoin_TestCode.framework */; };
 		BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */; };
 		BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */; };
 		BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979E23EC6A1C00B0F0AB /* ViewController.swift */; };
@@ -15,6 +16,11 @@
 		BF8997A723EC6A1E00B0F0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */; };
 		BF8997B223EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997B123EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift */; };
 		BF8997BD23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */; };
+		BF8997CC23EC7B5100B0F0AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CB23EC7B5100B0F0AB /* Constants.swift */; };
+		BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CE23EC7E5800B0F0AB /* Source.swift */; };
+		BF8997D123EC7F1900B0F0AB /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997D023EC7F1900B0F0AB /* New.swift */; };
+		CCA8A0FFD6D3C44DA82814DC /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C5EAA73643832E893A3CE /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework */; };
+		EB38EB35C5BCE328223CB834 /* Pods_Tokoin_TestCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726D494DC22F0B9E1AF27C2A /* Pods_Tokoin_TestCodeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A4C5EAA73643832E893A3CE /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AB842CAE43D2B219F817E92 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.release.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		726D494DC22F0B9E1AF27C2A /* Pods_Tokoin_TestCodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokoin_TestCodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81589A6F0507402CD5587D30 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.debug.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		83F52E712B318E30A045A8ED /* Pods-Tokoin_TestCode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode.debug.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode.debug.xcconfig"; sourceTree = "<group>"; };
+		8FECAE9F51DD167BDD4D8FE8 /* Pods_Tokoin_TestCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tokoin_TestCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B4B148D2DE41A781C15EFDA /* Pods-Tokoin_TestCodeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCodeTests.debug.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCodeTests/Pods-Tokoin_TestCodeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCF1C404A39CFE9DA08F9D65 /* Pods-Tokoin_TestCodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCodeTests.release.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCodeTests/Pods-Tokoin_TestCodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF89979723EC6A1C00B0F0AB /* Tokoin_TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tokoin_TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,10 @@
 		BF8997B823EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tokoin_TestCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokoin_TestCodeUITests.swift; sourceTree = "<group>"; };
 		BF8997BE23EC6A1F00B0F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8997CB23EC7B5100B0F0AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF8997CE23EC7E5800B0F0AB /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		BF8997D023EC7F1900B0F0AB /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		CEABE6C3BB85653E1EDD886B /* Pods-Tokoin_TestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode.release.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26538E4570858A9AD25A6512 /* Pods_Tokoin_TestCode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB38EB35C5BCE328223CB834 /* Pods_Tokoin_TestCodeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCA8A0FFD6D3C44DA82814DC /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BBC6A6DAB8E48675D758F6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F52E712B318E30A045A8ED /* Pods-Tokoin_TestCode.debug.xcconfig */,
+				CEABE6C3BB85653E1EDD886B /* Pods-Tokoin_TestCode.release.xcconfig */,
+				81589A6F0507402CD5587D30 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.debug.xcconfig */,
+				5AB842CAE43D2B219F817E92 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.release.xcconfig */,
+				9B4B148D2DE41A781C15EFDA /* Pods-Tokoin_TestCodeTests.debug.xcconfig */,
+				BCF1C404A39CFE9DA08F9D65 /* Pods-Tokoin_TestCodeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF89978E23EC6A1C00B0F0AB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 				BF8997B023EC6A1F00B0F0AB /* Tokoin_TestCodeTests */,
 				BF8997BB23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests */,
 				BF89979823EC6A1C00B0F0AB /* Products */,
+				0BBC6A6DAB8E48675D758F6D /* Pods */,
+				FD139A4ACD7470576889FDBE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +135,8 @@
 		BF89979923EC6A1C00B0F0AB /* Tokoin_TestCode */ = {
 			isa = PBXGroup;
 			children = (
+				BF8997CA23EC7B3200B0F0AB /* Service */,
+				BF8997CD23EC7E4600B0F0AB /* Model */,
 				BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */,
 				BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */,
 				BF89979E23EC6A1C00B0F0AB /* ViewController.swift */,
@@ -128,6 +166,33 @@
 			path = Tokoin_TestCodeUITests;
 			sourceTree = "<group>";
 		};
+		BF8997CA23EC7B3200B0F0AB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BF8997CB23EC7B5100B0F0AB /* Constants.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BF8997CD23EC7E4600B0F0AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF8997CE23EC7E5800B0F0AB /* Source.swift */,
+				BF8997D023EC7F1900B0F0AB /* New.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD139A4ACD7470576889FDBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8FECAE9F51DD167BDD4D8FE8 /* Pods_Tokoin_TestCode.framework */,
+				3A4C5EAA73643832E893A3CE /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework */,
+				726D494DC22F0B9E1AF27C2A /* Pods_Tokoin_TestCodeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8997C123EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCode" */;
 			buildPhases = (
+				678C11C83291DE644658DACA /* [CP] Check Pods Manifest.lock */,
 				BF89979323EC6A1C00B0F0AB /* Sources */,
 				BF89979423EC6A1C00B0F0AB /* Frameworks */,
 				BF89979523EC6A1C00B0F0AB /* Resources */,
+				9DD12A9C8B68BE7B8F074645 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8997C423EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeTests" */;
 			buildPhases = (
+				4C5F44F7C1BE29F909364FC9 /* [CP] Check Pods Manifest.lock */,
 				BF8997A923EC6A1F00B0F0AB /* Sources */,
 				BF8997AA23EC6A1F00B0F0AB /* Frameworks */,
 				BF8997AB23EC6A1F00B0F0AB /* Resources */,
@@ -170,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF8997C723EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeUITests" */;
 			buildPhases = (
+				CBEAC8E3807806503F2493EF /* [CP] Check Pods Manifest.lock */,
 				BF8997B423EC6A1F00B0F0AB /* Sources */,
 				BF8997B523EC6A1F00B0F0AB /* Frameworks */,
 				BF8997B623EC6A1F00B0F0AB /* Resources */,
+				494EF52842D4956BD56A2F45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +324,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		494EF52842D4956BD56A2F45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C5F44F7C1BE29F909364FC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tokoin_TestCodeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		678C11C83291DE644658DACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tokoin_TestCode-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DD12A9C8B68BE7B8F074645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBEAC8E3807806503F2493EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tokoin_TestCode-Tokoin_TestCodeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF89979323EC6A1C00B0F0AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -262,6 +435,9 @@
 				BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */,
 				BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */,
 				BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */,
+				BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */,
+				BF8997D123EC7F1900B0F0AB /* New.swift in Sources */,
+				BF8997CC23EC7B5100B0F0AB /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +608,7 @@
 		};
 		BF8997C223EC6A1F00B0F0AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F52E712B318E30A045A8ED /* Pods-Tokoin_TestCode.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +626,7 @@
 		};
 		BF8997C323EC6A1F00B0F0AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEABE6C3BB85653E1EDD886B /* Pods-Tokoin_TestCode.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +644,7 @@
 		};
 		BF8997C523EC6A1F00B0F0AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B4B148D2DE41A781C15EFDA /* Pods-Tokoin_TestCodeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +666,7 @@
 		};
 		BF8997C623EC6A1F00B0F0AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCF1C404A39CFE9DA08F9D65 /* Pods-Tokoin_TestCodeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +688,7 @@
 		};
 		BF8997C823EC6A1F00B0F0AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81589A6F0507402CD5587D30 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +708,7 @@
 		};
 		BF8997C923EC6A1F00B0F0AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AB842CAE43D2B219F817E92 /* Pods-Tokoin_TestCode-Tokoin_TestCodeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
