@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */; };
+		BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */; };
+		BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979E23EC6A1C00B0F0AB /* ViewController.swift */; };
+		BF8997A223EC6A1C00B0F0AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A023EC6A1C00B0F0AB /* Main.storyboard */; };
+		BF8997A423EC6A1E00B0F0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */; };
+		BF8997A723EC6A1E00B0F0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */; };
+		BF8997B223EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997B123EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift */; };
+		BF8997BD23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF8997AE23EC6A1F00B0F0AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF89978F23EC6A1C00B0F0AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF89979623EC6A1C00B0F0AB;
+			remoteInfo = Tokoin_TestCode;
+		};
+		BF8997B923EC6A1F00B0F0AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF89978F23EC6A1C00B0F0AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF89979623EC6A1C00B0F0AB;
+			remoteInfo = Tokoin_TestCode;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF89979723EC6A1C00B0F0AB /* Tokoin_TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tokoin_TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF89979E23EC6A1C00B0F0AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF8997A123EC6A1C00B0F0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF8997A623EC6A1E00B0F0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF8997A823EC6A1E00B0F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8997AD23EC6A1F00B0F0AB /* Tokoin_TestCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tokoin_TestCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8997B123EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokoin_TestCodeTests.swift; sourceTree = "<group>"; };
+		BF8997B323EC6A1F00B0F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF8997B823EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tokoin_TestCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokoin_TestCodeUITests.swift; sourceTree = "<group>"; };
+		BF8997BE23EC6A1F00B0F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF89979423EC6A1C00B0F0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997AA23EC6A1F00B0F0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997B523EC6A1F00B0F0AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF89978E23EC6A1C00B0F0AB = {
+			isa = PBXGroup;
+			children = (
+				BF89979923EC6A1C00B0F0AB /* Tokoin_TestCode */,
+				BF8997B023EC6A1F00B0F0AB /* Tokoin_TestCodeTests */,
+				BF8997BB23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests */,
+				BF89979823EC6A1C00B0F0AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF89979823EC6A1C00B0F0AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF89979723EC6A1C00B0F0AB /* Tokoin_TestCode.app */,
+				BF8997AD23EC6A1F00B0F0AB /* Tokoin_TestCodeTests.xctest */,
+				BF8997B823EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF89979923EC6A1C00B0F0AB /* Tokoin_TestCode */ = {
+			isa = PBXGroup;
+			children = (
+				BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */,
+				BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */,
+				BF89979E23EC6A1C00B0F0AB /* ViewController.swift */,
+				BF8997A023EC6A1C00B0F0AB /* Main.storyboard */,
+				BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */,
+				BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */,
+				BF8997A823EC6A1E00B0F0AB /* Info.plist */,
+			);
+			path = Tokoin_TestCode;
+			sourceTree = "<group>";
+		};
+		BF8997B023EC6A1F00B0F0AB /* Tokoin_TestCodeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8997B123EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift */,
+				BF8997B323EC6A1F00B0F0AB /* Info.plist */,
+			);
+			path = Tokoin_TestCodeTests;
+			sourceTree = "<group>";
+		};
+		BF8997BB23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */,
+				BF8997BE23EC6A1F00B0F0AB /* Info.plist */,
+			);
+			path = Tokoin_TestCodeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF89979623EC6A1C00B0F0AB /* Tokoin_TestCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8997C123EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCode" */;
+			buildPhases = (
+				BF89979323EC6A1C00B0F0AB /* Sources */,
+				BF89979423EC6A1C00B0F0AB /* Frameworks */,
+				BF89979523EC6A1C00B0F0AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tokoin_TestCode;
+			productName = Tokoin_TestCode;
+			productReference = BF89979723EC6A1C00B0F0AB /* Tokoin_TestCode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF8997AC23EC6A1F00B0F0AB /* Tokoin_TestCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8997C423EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeTests" */;
+			buildPhases = (
+				BF8997A923EC6A1F00B0F0AB /* Sources */,
+				BF8997AA23EC6A1F00B0F0AB /* Frameworks */,
+				BF8997AB23EC6A1F00B0F0AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8997AF23EC6A1F00B0F0AB /* PBXTargetDependency */,
+			);
+			name = Tokoin_TestCodeTests;
+			productName = Tokoin_TestCodeTests;
+			productReference = BF8997AD23EC6A1F00B0F0AB /* Tokoin_TestCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF8997B723EC6A1F00B0F0AB /* Tokoin_TestCodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF8997C723EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeUITests" */;
+			buildPhases = (
+				BF8997B423EC6A1F00B0F0AB /* Sources */,
+				BF8997B523EC6A1F00B0F0AB /* Frameworks */,
+				BF8997B623EC6A1F00B0F0AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF8997BA23EC6A1F00B0F0AB /* PBXTargetDependency */,
+			);
+			name = Tokoin_TestCodeUITests;
+			productName = Tokoin_TestCodeUITests;
+			productReference = BF8997B823EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF89978F23EC6A1C00B0F0AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = LanThien;
+				TargetAttributes = {
+					BF89979623EC6A1C00B0F0AB = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					BF8997AC23EC6A1F00B0F0AB = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = BF89979623EC6A1C00B0F0AB;
+					};
+					BF8997B723EC6A1F00B0F0AB = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = BF89979623EC6A1C00B0F0AB;
+					};
+				};
+			};
+			buildConfigurationList = BF89979223EC6A1C00B0F0AB /* Build configuration list for PBXProject "Tokoin_TestCode" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF89978E23EC6A1C00B0F0AB;
+			productRefGroup = BF89979823EC6A1C00B0F0AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF89979623EC6A1C00B0F0AB /* Tokoin_TestCode */,
+				BF8997AC23EC6A1F00B0F0AB /* Tokoin_TestCodeTests */,
+				BF8997B723EC6A1F00B0F0AB /* Tokoin_TestCodeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF89979523EC6A1C00B0F0AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8997A723EC6A1E00B0F0AB /* LaunchScreen.storyboard in Resources */,
+				BF8997A423EC6A1E00B0F0AB /* Assets.xcassets in Resources */,
+				BF8997A223EC6A1C00B0F0AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997AB23EC6A1F00B0F0AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997B623EC6A1F00B0F0AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF89979323EC6A1C00B0F0AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */,
+				BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */,
+				BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997A923EC6A1F00B0F0AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8997B223EC6A1F00B0F0AB /* Tokoin_TestCodeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF8997B423EC6A1F00B0F0AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF8997BD23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF8997AF23EC6A1F00B0F0AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF89979623EC6A1C00B0F0AB /* Tokoin_TestCode */;
+			targetProxy = BF8997AE23EC6A1F00B0F0AB /* PBXContainerItemProxy */;
+		};
+		BF8997BA23EC6A1F00B0F0AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF89979623EC6A1C00B0F0AB /* Tokoin_TestCode */;
+			targetProxy = BF8997B923EC6A1F00B0F0AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF8997A023EC6A1C00B0F0AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8997A123EC6A1C00B0F0AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF8997A623EC6A1E00B0F0AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF8997BF23EC6A1F00B0F0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF8997C023EC6A1F00B0F0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF8997C223EC6A1F00B0F0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF8997C323EC6A1F00B0F0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCode/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF8997C523EC6A1F00B0F0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tokoin_TestCode.app/Tokoin_TestCode";
+			};
+			name = Debug;
+		};
+		BF8997C623EC6A1F00B0F0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCodeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCodeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tokoin_TestCode.app/Tokoin_TestCode";
+			};
+			name = Release;
+		};
+		BF8997C823EC6A1F00B0F0AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tokoin_TestCode;
+			};
+			name = Debug;
+		};
+		BF8997C923EC6A1F00B0F0AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tokoin_TestCodeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "lan.thien.Tokoin-TestCodeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tokoin_TestCode;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF89979223EC6A1C00B0F0AB /* Build configuration list for PBXProject "Tokoin_TestCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8997BF23EC6A1F00B0F0AB /* Debug */,
+				BF8997C023EC6A1F00B0F0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8997C123EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8997C223EC6A1F00B0F0AB /* Debug */,
+				BF8997C323EC6A1F00B0F0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8997C423EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8997C523EC6A1F00B0F0AB /* Debug */,
+				BF8997C623EC6A1F00B0F0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF8997C723EC6A1F00B0F0AB /* Build configuration list for PBXNativeTarget "Tokoin_TestCodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF8997C823EC6A1F00B0F0AB /* Debug */,
+				BF8997C923EC6A1F00B0F0AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF89978F23EC6A1C00B0F0AB /* Project object */;
+}
