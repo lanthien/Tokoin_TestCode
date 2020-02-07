@@ -9,6 +9,10 @@
 import Foundation
 
 class ServiceManager: BaseServices {
+    static let instance = ServiceManager()
+    
+    private override init() {}
+    
     func getHeadlines(pageSize: UInt,
                       page: UInt,
                       _ completionHandler: (([New]) -> Void)?) {
@@ -32,27 +36,27 @@ class ServiceManager: BaseServices {
                          pageSize: UInt,
                          page: UInt,
                          _ completionHandler: (([New]) -> Void)?) {
-        let url = domain.fullPath()
-        var params: [String: Any] = ["page": Int(page)]
+        var url = domain.fullPath() + "?page=\(Int(page))"
         if pageSize > 0 {
-            params["pageSize"] = Int(pageSize)
+            url.append(contentsOf: "&pageSize=\(Int(pageSize))")
         }
         
-        self.get(urlStr: url, params: params) { (data, error) in
+        self.get(urlStr: url, params: nil) { (data, error) in
             guard let data = data
                 else {
                     completionHandler?([])
                     return
             }
             
-            guard let json = data as? String,
-                let jsonData = json.data(using: .utf8)
-                else {
-                    completionHandler?([])
-                    return
-            }
-            let decoder = JSONDecoder()
             do {
+                guard let json = data as? [String: Any],
+                    let articles = json["articles"] as? [Any]
+                    else {
+                        completionHandler?([])
+                        return
+                }
+                let jsonData = try JSONSerialization.data(withJSONObject: articles, options: .prettyPrinted)
+                let decoder = JSONDecoder()
                 let news = try decoder.decode([New].self, from: jsonData)
                 completionHandler?(news)
             } catch {

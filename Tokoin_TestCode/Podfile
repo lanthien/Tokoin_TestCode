@@ -7,6 +7,7 @@ target 'Tokoin_TestCode' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'IQKeyboardManager'
+  pod 'RealmSwift'
 
   # Pods for Tokoin_TestCode
 

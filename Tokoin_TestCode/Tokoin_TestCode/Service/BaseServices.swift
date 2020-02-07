@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-fileprivate let BASE_URL: String = "https://newsapi.org/v2/%@"
+fileprivate let BASE_URL: String = "https://newsapi.org/v2/"
 
 enum URL_DOMAINS: String {
     case topHeadline = "top-headlines"
@@ -21,22 +21,15 @@ enum URL_DOMAINS: String {
 }
 
 class BaseServices {
-    fileprivate let API_KEY = "0417fa47e82c4a0abdea882e327964d8"
+    fileprivate let API_KEY = "81375c9e8f9f4e2693db6e31d660668a"
     
     func get(urlStr: String,
              params: [String: Any]? = nil,
              header: HTTPHeaders? = nil,
              completion: ((Any?, Error?) -> Void)?) {
-        var requestParams: [String: Any]
-        if let params = params {
-            requestParams = params
-        } else {
-            requestParams = [String: Any]()
-        }
-        requestParams["country"] = "us"
-        requestParams["apiKey"] = "API_KEY"
+        let url = urlStr + "&country=us&apiKey=\(API_KEY)"
         
-        Alamofire.request(urlStr, method: .get, parameters: params, encoding: JSONEncoding.default, headers: header)
+        Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: header)
             .responseJSON { (dataResponse) in
                 if let error = dataResponse.error {
                     completion?(nil, error)

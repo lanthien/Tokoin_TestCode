@@ -9,6 +9,6 @@
 import Foundation
 
 class Source: Decodable {
-    var id: Int?
+    var id: String?
     var name: String
 }

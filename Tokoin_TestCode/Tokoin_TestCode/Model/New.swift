@@ -9,7 +9,7 @@
 import Foundation
 
 class New: Decodable {
-    var source: [Source]
+    var source: Source
     var author: String?
     var title: String
     var description: String
