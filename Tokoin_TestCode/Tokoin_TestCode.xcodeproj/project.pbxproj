@@ -19,6 +19,8 @@
 		BF8997CC23EC7B5100B0F0AB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CB23EC7B5100B0F0AB /* Constants.swift */; };
 		BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CE23EC7E5800B0F0AB /* Source.swift */; };
 		BF8997D123EC7F1900B0F0AB /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997D023EC7F1900B0F0AB /* New.swift */; };
+		C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51223ED65A200D638B7 /* BaseServices.swift */; };
+		C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51423ED683700D638B7 /* ServiceManager.swift */; };
 		CCA8A0FFD6D3C44DA82814DC /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C5EAA73643832E893A3CE /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework */; };
 		EB38EB35C5BCE328223CB834 /* Pods_Tokoin_TestCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726D494DC22F0B9E1AF27C2A /* Pods_Tokoin_TestCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		BF8997CB23EC7B5100B0F0AB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BF8997CE23EC7E5800B0F0AB /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		BF8997D023EC7F1900B0F0AB /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		C90AE51223ED65A200D638B7 /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		C90AE51423ED683700D638B7 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		CEABE6C3BB85653E1EDD886B /* Pods-Tokoin_TestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode.release.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				BF8997CB23EC7B5100B0F0AB /* Constants.swift */,
+				C90AE51223ED65A200D638B7 /* BaseServices.swift */,
+				C90AE51423ED683700D638B7 /* ServiceManager.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -435,6 +441,8 @@
 				BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */,
 				BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */,
 				BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */,
+				C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */,
+				C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */,
 				BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */,
 				BF8997D123EC7F1900B0F0AB /* New.swift in Sources */,
 				BF8997CC23EC7B5100B0F0AB /* Constants.swift in Sources */,
