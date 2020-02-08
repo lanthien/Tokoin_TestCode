@@ -30,7 +30,7 @@ class BaseServices {
              params: [String: Any]? = nil,
              header: HTTPHeaders? = nil,
              completion: ((Any?, Error?) -> Void)?) {
-        let url = urlStr + "&apiKey=\(API_KEY)"
+        let url = urlStr + "apiKey=\(API_KEY)"
         
         Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: header)
             .responseJSON { (dataResponse) in

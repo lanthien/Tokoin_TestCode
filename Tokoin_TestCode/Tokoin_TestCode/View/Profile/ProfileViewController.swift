@@ -12,19 +12,27 @@ class ProfileViewController: UIViewController {
     @IBOutlet internal weak var imvAvatar: UIImageView!
     @IBOutlet internal weak var lblName: UILabel!
     @IBOutlet internal weak var lblEmail: UILabel!
-    @IBOutlet internal weak var tfPassword: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.configUI()
+    }
+    
+    private func configUI() {
+        self.imvAvatar.roundView(.black)
+        
+        guard let user = LoginManager.instance.user
+            else { return}
+        self.lblName.text = user.name
+        self.lblEmail.text = user.email
+        if let imageData = user.avatar {
+            self.imvAvatar.image = UIImage(data: imageData)
+        }
     }
     
     @IBAction private func tapOnSignOutButton(_ sender: UIButton?) {
-        UserDefaults.standard.removeObject(forKey: ACTIVED_USER_KEY)
-        
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginViewController")
-        self.view.window?.rootViewController = vc
-        self.view.window?.makeKeyAndVisible()
+        LoginManager.instance.signOut()
     }
 }

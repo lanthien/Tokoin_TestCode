@@ -22,6 +22,7 @@ class BitCoinNewsViewController: TopHeadlineViewController {
             guard news.count > 0 else { return }
             self?.news.append(contentsOf: news)
             DispatchQueue.main.async {
+                self?.view.backgroundColor = .lightGray
                 self?.tableView.reloadData()
             }
         }

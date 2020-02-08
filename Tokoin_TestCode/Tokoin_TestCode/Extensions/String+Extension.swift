@@ -10,13 +10,15 @@ import Foundation
 
 extension String {
     var isEmail: Bool {
-        let pattern = "^[a-z][a-z0-9_\\.]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$"
-        guard let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive)
-            else { return false }
-        let results = regex.matches(in: self,
-                                   options: .init(rawValue: 0),
-                                   range: NSRange(location: 0, length: self.count))
-        return results.count == 1
+        let pattern = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
+        do {
+            let regex = try NSRegularExpression(pattern: pattern, options: .caseInsensitive)
+            let result = regex.firstMatch(in: self, options: .init(rawValue: 0), range: NSRange(location: 0, length: self.count))
+            return result != nil
+        } catch {
+            return false
+        }
+        
     }
     
     func convertToDate() -> Date {

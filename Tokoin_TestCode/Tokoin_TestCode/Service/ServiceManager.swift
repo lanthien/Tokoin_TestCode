@@ -36,10 +36,10 @@ class ServiceManager: BaseServices {
                          pageSize: UInt,
                          page: UInt,
                          _ completionHandler: (([New]) -> Void)?) {
-        var url = domain.fullPath() + "page=\(Int(page))"
-        if pageSize > 0 {
-            url.append(contentsOf: "&pageSize=\(Int(pageSize))")
-        }
+        let url = domain.fullPath() //+ "page=\(Int(page))"
+//        if pageSize > 0 {
+//            url.append(contentsOf: "&pageSize=\(Int(pageSize))")
+//        }
         
         self.get(urlStr: url, params: nil) { (data, error) in
             guard let data = data

@@ -13,6 +13,7 @@ class User: Object {
     @objc dynamic var email: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var password: String = ""
+    @objc dynamic var avatar: Data?
     
     override static func primaryKey() -> String? {
         return "email"

@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction internal func tapOnLoginBtn(_ sender: UIButton?) {
+    @IBAction private func tapOnLoginBtn(_ sender: UIButton?) {
         guard checkIsValid() else { return }
         guard let user = self.getUser()
             else {
@@ -34,12 +34,7 @@ class LoginViewController: UIViewController {
             return
         }
         
-        UserDefaults.standard.set(user.email, forKey: ACTIVED_USER_KEY)
-        
-        let tabbarVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainTabbarViewController")
-        self.view.window?.rootViewController = tabbarVC
-        self.view.window?.makeKeyAndVisible()
-        
+        LoginManager.instance.signIn(user: user)
     }
     
     internal func checkIsValid() -> Bool {
@@ -57,8 +52,8 @@ class LoginViewController: UIViewController {
             self.showSimpleAlert(title: "Warning", message: "Password is empty.")
             return false
         }
-        if (self.tfPassword.text?.count ?? 0) < 3 {
-            self.showSimpleAlert(title: "Warning", message: "Password is invalid.")
+        if (self.tfPassword.text?.count ?? 0) < 6 {
+            self.showSimpleAlert(title: "Warning", message: "Password much have at least 6 characters.")
             return false
         }
         return true

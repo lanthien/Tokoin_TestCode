@@ -18,9 +18,11 @@
 		BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CE23EC7E5800B0F0AB /* Source.swift */; };
 		BF8997D123EC7F1900B0F0AB /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997D023EC7F1900B0F0AB /* New.swift */; };
 		C9006A1323EEB6E200E6605B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9006A1223EEB6E200E6605B /* ProfileViewController.swift */; };
-		C9006A1523EEB7C000E6605B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9006A1423EEB7C000E6605B /* Constants.swift */; };
 		C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51223ED65A200D638B7 /* BaseServices.swift */; };
 		C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51423ED683700D638B7 /* ServiceManager.swift */; };
+		C92405FD23EEEDD200FDB808 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92405FC23EEEDD200FDB808 /* LoginManager.swift */; };
+		C92405FF23EEF76700FDB808 /* UIView+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92405FE23EEF76700FDB808 /* UIView+Extenstion.swift */; };
+		C924060223EF029F00FDB808 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C924060123EF029F00FDB808 /* DetailViewController.swift */; };
 		C95DF24D23EDE2710090A457 /* NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95DF24B23EDE2710090A457 /* NewsTableCell.swift */; };
 		C95DF24E23EDE2710090A457 /* NewsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95DF24C23EDE2710090A457 /* NewsTableCell.xib */; };
 		C95DF25023EDEF4F0090A457 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95DF24F23EDEF4F0090A457 /* Date+Extension.swift */; };
@@ -80,9 +82,11 @@
 		BF8997CE23EC7E5800B0F0AB /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		BF8997D023EC7F1900B0F0AB /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		C9006A1223EEB6E200E6605B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		C9006A1423EEB7C000E6605B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C90AE51223ED65A200D638B7 /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
 		C90AE51423ED683700D638B7 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		C92405FC23EEEDD200FDB808 /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		C92405FE23EEF76700FDB808 /* UIView+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extenstion.swift"; sourceTree = "<group>"; };
+		C924060123EF029F00FDB808 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C95DF24B23EDE2710090A457 /* NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableCell.swift; sourceTree = "<group>"; };
 		C95DF24C23EDE2710090A457 /* NewsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableCell.xib; sourceTree = "<group>"; };
 		C95DF24F23EDEF4F0090A457 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
@@ -200,10 +204,10 @@
 		BF8997CA23EC7B3200B0F0AB /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				C92405FC23EEEDD200FDB808 /* LoginManager.swift */,
 				C90AE51223ED65A200D638B7 /* BaseServices.swift */,
 				C90AE51423ED683700D638B7 /* ServiceManager.swift */,
 				C9B2839123EDD395003724FD /* RealmDBManager.swift */,
-				C9006A1423EEB7C000E6605B /* Constants.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -235,6 +239,14 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		C924060023EF028800FDB808 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C924060123EF029F00FDB808 /* DetailViewController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		C95DF24A23EDE24B0090A457 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +273,7 @@
 				C9D836EF23EDC4A400361C28 /* Register */,
 				C9A9493B23EDE0D100F7A3E6 /* TopHeadline */,
 				C9F16D7B23EE9BCF008A81B6 /* BitCoinNews */,
+				C924060023EF028800FDB808 /* Detail */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +293,7 @@
 				C9D836EA23EDBD9200361C28 /* String+Extension.swift */,
 				C9D836EC23EDBEBF00361C28 /* ViewController+Extension.swift */,
 				C95DF24F23EDEF4F0090A457 /* Date+Extension.swift */,
+				C92405FE23EEF76700FDB808 /* UIView+Extenstion.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -559,16 +573,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */,
+				C92405FF23EEF76700FDB808 /* UIView+Extenstion.swift in Sources */,
 				BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */,
 				C9006A1323EEB6E200E6605B /* ProfileViewController.swift in Sources */,
 				C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */,
 				C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */,
+				C92405FD23EEEDD200FDB808 /* LoginManager.swift in Sources */,
 				BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */,
 				C9B2839223EDD395003724FD /* RealmDBManager.swift in Sources */,
 				C9B2839023EDCCEE003724FD /* User.swift in Sources */,
 				C9D836F123EDC57900361C28 /* RegisterViewController.swift in Sources */,
+				C924060223EF029F00FDB808 /* DetailViewController.swift in Sources */,
 				C9D836EB23EDBD9200361C28 /* String+Extension.swift in Sources */,
-				C9006A1523EEB7C000E6605B /* Constants.swift in Sources */,
 				C9D836E623EDBAB900361C28 /* SimpleFloatTextField.swift in Sources */,
 				BF8997D123EC7F1900B0F0AB /* New.swift in Sources */,
 				C9D836ED23EDBEBF00361C28 /* ViewController+Extension.swift in Sources */,

@@ -19,14 +19,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
         
-        let email: String? = UserDefaults.standard.string(forKey: ACTIVED_USER_KEY)
         let vc: UIViewController
-        if email == nil {
+        if let _ = LoginManager.instance.user {
             vc = UIStoryboard(name: "Main", bundle: nil)
-                .instantiateViewController(identifier: "LoginViewController")
+                .instantiateViewController(identifier: "MainTabbarViewController")
         } else {
             vc = UIStoryboard(name: "Main", bundle: nil)
-            .instantiateViewController(identifier: "MainTabbarViewController")
+                .instantiateViewController(identifier: "LoginViewController")
         }
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
@@ -64,11 +63,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
     }
-    
-    private func getViewController(storyboardName: String,
-                                   vcId: String) -> UIViewController {
-        return UIStoryboard(name: storyboardName, bundle: nil).instantiateViewController(identifier: vcId)
-    }
-
 }
 

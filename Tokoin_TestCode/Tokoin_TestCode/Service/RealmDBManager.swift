@@ -43,6 +43,7 @@ class RealmDBManager {
      
      - parameter object: The object need add or update
      */
+    @discardableResult
     func addObject(_ object: Object) -> Bool {
         do {
             try database.write {[unowned self] in

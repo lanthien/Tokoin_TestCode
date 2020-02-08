@@ -37,8 +37,8 @@ class NewsTableCell: UITableViewCell {
         
         guard let imageLink = new.urlToImage else { return }
         let url = URL(string: imageLink)
-        self.imvThumbnail.sd_setImage(with: url, placeholderImage: UIImage(named: "no-image-available"), options: .continueInBackground) { [weak self](image, error, _, _) in
-            guard let _ = image else { return }
+        self.imvThumbnail.sd_setImage(with: url, placeholderImage: UIImage(named: "no-image-available"), options: .continueInBackground) { [weak self](_, error, _, _) in
+            guard error == nil else { return }
             DispatchQueue.main.async {
                 self?.imvThumbnail.contentMode = .scaleAspectFill
             }

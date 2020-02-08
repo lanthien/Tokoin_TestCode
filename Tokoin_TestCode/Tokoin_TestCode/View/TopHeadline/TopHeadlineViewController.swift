@@ -31,6 +31,7 @@ class TopHeadlineViewController: UIViewController {
             guard news.count > 0 else { return }
             self?.news.append(contentsOf: news)
             DispatchQueue.main.async {
+                self?.view.backgroundColor = .lightGray
                 self?.tableView.reloadData()
             }
         }
@@ -39,6 +40,7 @@ class TopHeadlineViewController: UIViewController {
     private func configTableView() {
         self.tableView.register(UINib(nibName: cellID, bundle: nil), forCellReuseIdentifier:cellID)
         self.tableView.dataSource = self
+        self.tableView.delegate = self
         self.tableView.estimatedRowHeight = 20
         self.tableView.rowHeight = UITableView.automaticDimension
     }
@@ -54,5 +56,15 @@ extension TopHeadlineViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellID, for: indexPath) as! NewsTableCell
         cell.configCell(new: news[indexPath.row])
         return cell
+    }
+}
+
+//MARK: - UITableViewDataSource
+extension TopHeadlineViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "DetailViewController") as? DetailViewController
+            else { return }
+        vc.url = URL(string: self.news[indexPath.row].url)
+        self.present(vc, animated: true, completion: nil)
     }
 }
