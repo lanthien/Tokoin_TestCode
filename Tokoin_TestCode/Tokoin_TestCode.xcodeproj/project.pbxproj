@@ -10,7 +10,6 @@
 		26538E4570858A9AD25A6512 /* Pods_Tokoin_TestCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FECAE9F51DD167BDD4D8FE8 /* Pods_Tokoin_TestCode.framework */; };
 		BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */; };
 		BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */; };
-		BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89979E23EC6A1C00B0F0AB /* ViewController.swift */; };
 		BF8997A223EC6A1C00B0F0AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A023EC6A1C00B0F0AB /* Main.storyboard */; };
 		BF8997A423EC6A1E00B0F0AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */; };
 		BF8997A723EC6A1E00B0F0AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */; };
@@ -18,12 +17,13 @@
 		BF8997BD23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997BC23EC6A1F00B0F0AB /* Tokoin_TestCodeUITests.swift */; };
 		BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997CE23EC7E5800B0F0AB /* Source.swift */; };
 		BF8997D123EC7F1900B0F0AB /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8997D023EC7F1900B0F0AB /* New.swift */; };
+		C9006A1323EEB6E200E6605B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9006A1223EEB6E200E6605B /* ProfileViewController.swift */; };
+		C9006A1523EEB7C000E6605B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9006A1423EEB7C000E6605B /* Constants.swift */; };
 		C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51223ED65A200D638B7 /* BaseServices.swift */; };
 		C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90AE51423ED683700D638B7 /* ServiceManager.swift */; };
 		C95DF24D23EDE2710090A457 /* NewsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95DF24B23EDE2710090A457 /* NewsTableCell.swift */; };
 		C95DF24E23EDE2710090A457 /* NewsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C95DF24C23EDE2710090A457 /* NewsTableCell.xib */; };
 		C95DF25023EDEF4F0090A457 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95DF24F23EDEF4F0090A457 /* Date+Extension.swift */; };
-		C9A9493823EDDD3000F7A3E6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9493723EDDD3000F7A3E6 /* Constants.swift */; };
 		C9A9493A23EDE0CC00F7A3E6 /* TopHeadlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9493923EDE0CC00F7A3E6 /* TopHeadlineViewController.swift */; };
 		C9B2839023EDCCEE003724FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2838F23EDCCEE003724FD /* User.swift */; };
 		C9B2839223EDD395003724FD /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B2839123EDD395003724FD /* RealmDBManager.swift */; };
@@ -33,6 +33,7 @@
 		C9D836EB23EDBD9200361C28 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D836EA23EDBD9200361C28 /* String+Extension.swift */; };
 		C9D836ED23EDBEBF00361C28 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D836EC23EDBEBF00361C28 /* ViewController+Extension.swift */; };
 		C9D836F123EDC57900361C28 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D836F023EDC57900361C28 /* RegisterViewController.swift */; };
+		C9F16D7D23EE9BF7008A81B6 /* BitCoinNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F16D7C23EE9BF7008A81B6 /* BitCoinNewsViewController.swift */; };
 		CCA8A0FFD6D3C44DA82814DC /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A4C5EAA73643832E893A3CE /* Pods_Tokoin_TestCode_Tokoin_TestCodeUITests.framework */; };
 		EB38EB35C5BCE328223CB834 /* Pods_Tokoin_TestCodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726D494DC22F0B9E1AF27C2A /* Pods_Tokoin_TestCodeTests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +67,6 @@
 		BF89979723EC6A1C00B0F0AB /* Tokoin_TestCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tokoin_TestCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF89979E23EC6A1C00B0F0AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF8997A123EC6A1C00B0F0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF8997A623EC6A1E00B0F0AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,12 +79,13 @@
 		BF8997BE23EC6A1F00B0F0AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF8997CE23EC7E5800B0F0AB /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		BF8997D023EC7F1900B0F0AB /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		C9006A1223EEB6E200E6605B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C9006A1423EEB7C000E6605B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C90AE51223ED65A200D638B7 /* BaseServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
 		C90AE51423ED683700D638B7 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		C95DF24B23EDE2710090A457 /* NewsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableCell.swift; sourceTree = "<group>"; };
 		C95DF24C23EDE2710090A457 /* NewsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableCell.xib; sourceTree = "<group>"; };
 		C95DF24F23EDEF4F0090A457 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
-		C9A9493723EDDD3000F7A3E6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C9A9493923EDE0CC00F7A3E6 /* TopHeadlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadlineViewController.swift; sourceTree = "<group>"; };
 		C9B2838F23EDCCEE003724FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C9B2839123EDD395003724FD /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		C9D836EA23EDBD9200361C28 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		C9D836EC23EDBEBF00361C28 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
 		C9D836F023EDC57900361C28 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		C9F16D7C23EE9BF7008A81B6 /* BitCoinNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitCoinNewsViewController.swift; sourceTree = "<group>"; };
 		CEABE6C3BB85653E1EDD886B /* Pods-Tokoin_TestCode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tokoin_TestCode.release.xcconfig"; path = "Target Support Files/Pods-Tokoin_TestCode/Pods-Tokoin_TestCode.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,14 +165,12 @@
 		BF89979923EC6A1C00B0F0AB /* Tokoin_TestCode */ = {
 			isa = PBXGroup;
 			children = (
+				C900303323EEA36D0031029A /* Application */,
 				C9D836E923EDBD8200361C28 /* Extensions */,
 				C9D836E423EDBA9F00361C28 /* Common */,
 				BF8997CA23EC7B3200B0F0AB /* Service */,
 				BF8997CD23EC7E4600B0F0AB /* Model */,
 				C9D836E123EDBA0B00361C28 /* View */,
-				BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */,
-				BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */,
-				BF89979E23EC6A1C00B0F0AB /* ViewController.swift */,
 				BF8997A023EC6A1C00B0F0AB /* Main.storyboard */,
 				BF8997A323EC6A1E00B0F0AB /* Assets.xcassets */,
 				BF8997A523EC6A1E00B0F0AB /* LaunchScreen.storyboard */,
@@ -203,6 +203,7 @@
 				C90AE51223ED65A200D638B7 /* BaseServices.swift */,
 				C90AE51423ED683700D638B7 /* ServiceManager.swift */,
 				C9B2839123EDD395003724FD /* RealmDBManager.swift */,
+				C9006A1423EEB7C000E6605B /* Constants.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -217,6 +218,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C900303323EEA36D0031029A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				BF89979A23EC6A1C00B0F0AB /* AppDelegate.swift */,
+				BF89979C23EC6A1C00B0F0AB /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		C9006A1123EEB6AD00E6605B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C9006A1223EEB6E200E6605B /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		C95DF24A23EDE24B0090A457 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -229,8 +247,8 @@
 		C9A9493B23EDE0D100F7A3E6 /* TopHeadline */ = {
 			isa = PBXGroup;
 			children = (
-				C95DF24A23EDE24B0090A457 /* Cell */,
 				C9A9493923EDE0CC00F7A3E6 /* TopHeadlineViewController.swift */,
+				C95DF24A23EDE24B0090A457 /* Cell */,
 			);
 			path = TopHeadline;
 			sourceTree = "<group>";
@@ -238,9 +256,11 @@
 		C9D836E123EDBA0B00361C28 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C9006A1123EEB6AD00E6605B /* Profile */,
 				C9D836EE23EDC49F00361C28 /* Login */,
 				C9D836EF23EDC4A400361C28 /* Register */,
 				C9A9493B23EDE0D100F7A3E6 /* TopHeadline */,
+				C9F16D7B23EE9BCF008A81B6 /* BitCoinNews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,7 +270,6 @@
 			children = (
 				C9D836E523EDBAB900361C28 /* SimpleFloatTextField.swift */,
 				C9D836E723EDBCDC00361C28 /* Utis.swift */,
-				C9A9493723EDDD3000F7A3E6 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -279,6 +298,14 @@
 				C9D836F023EDC57900361C28 /* RegisterViewController.swift */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		C9F16D7B23EE9BCF008A81B6 /* BitCoinNews */ = {
+			isa = PBXGroup;
+			children = (
+				C9F16D7C23EE9BF7008A81B6 /* BitCoinNewsViewController.swift */,
+			);
+			path = BitCoinNews;
 			sourceTree = "<group>";
 		};
 		FD139A4ACD7470576889FDBE /* Frameworks */ = {
@@ -531,10 +558,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF89979F23EC6A1C00B0F0AB /* ViewController.swift in Sources */,
 				BF89979B23EC6A1C00B0F0AB /* AppDelegate.swift in Sources */,
 				BF89979D23EC6A1C00B0F0AB /* SceneDelegate.swift in Sources */,
-				C9A9493823EDDD3000F7A3E6 /* Constants.swift in Sources */,
+				C9006A1323EEB6E200E6605B /* ProfileViewController.swift in Sources */,
 				C90AE51523ED683700D638B7 /* ServiceManager.swift in Sources */,
 				C90AE51323ED65A200D638B7 /* BaseServices.swift in Sources */,
 				BF8997CF23EC7E5800B0F0AB /* Source.swift in Sources */,
@@ -542,6 +568,7 @@
 				C9B2839023EDCCEE003724FD /* User.swift in Sources */,
 				C9D836F123EDC57900361C28 /* RegisterViewController.swift in Sources */,
 				C9D836EB23EDBD9200361C28 /* String+Extension.swift in Sources */,
+				C9006A1523EEB7C000E6605B /* Constants.swift in Sources */,
 				C9D836E623EDBAB900361C28 /* SimpleFloatTextField.swift in Sources */,
 				BF8997D123EC7F1900B0F0AB /* New.swift in Sources */,
 				C9D836ED23EDBEBF00361C28 /* ViewController+Extension.swift in Sources */,
@@ -549,6 +576,7 @@
 				C9A9493A23EDE0CC00F7A3E6 /* TopHeadlineViewController.swift in Sources */,
 				C9D836E823EDBCDC00361C28 /* Utis.swift in Sources */,
 				C95DF25023EDEF4F0090A457 /* Date+Extension.swift in Sources */,
+				C9F16D7D23EE9BF7008A81B6 /* BitCoinNewsViewController.swift in Sources */,
 				C95DF24D23EDE2710090A457 /* NewsTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

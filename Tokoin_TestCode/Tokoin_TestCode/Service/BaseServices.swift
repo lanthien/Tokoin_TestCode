@@ -16,7 +16,10 @@ enum URL_DOMAINS: String {
     case bitcoin = "bitcoin"
     
     func fullPath() -> String {
-        return BASE_URL + self.rawValue
+        if self == .topHeadline {
+            return BASE_URL + self.rawValue + "?country=us&"
+        }
+        return BASE_URL + "everything?q=\(self.rawValue)&"
     }
 }
 
@@ -27,7 +30,7 @@ class BaseServices {
              params: [String: Any]? = nil,
              header: HTTPHeaders? = nil,
              completion: ((Any?, Error?) -> Void)?) {
-        let url = urlStr + "&country=us&apiKey=\(API_KEY)"
+        let url = urlStr + "&apiKey=\(API_KEY)"
         
         Alamofire.request(url, method: .get, parameters: params, encoding: JSONEncoding.default, headers: header)
             .responseJSON { (dataResponse) in

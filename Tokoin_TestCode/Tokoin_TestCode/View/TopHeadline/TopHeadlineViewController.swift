@@ -9,11 +9,12 @@
 import UIKit
 
 class TopHeadlineViewController: UIViewController {
-    @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var indicator: UIActivityIndicatorView!
     
-    private var news: [New] = [New]()
-    private let currentPageSize: UInt = 20
-    private var currentPage: UInt = 1
+    var news: [New] = [New]()
+    let currentPageSize: UInt = 20
+    var currentPage: UInt = 1
     private let cellID = "NewsTableCell"
     
     override func viewDidLoad() {
@@ -24,8 +25,9 @@ class TopHeadlineViewController: UIViewController {
         self.getNews()
     }
     
-    private func getNews() {
+    func getNews() {
         ServiceManager.instance.getHeadlines(pageSize: currentPageSize, page: currentPage) { [weak self](news) in
+            self?.indicator.stopAnimating()
             guard news.count > 0 else { return }
             self?.news.append(contentsOf: news)
             DispatchQueue.main.async {

@@ -28,19 +28,21 @@ class NewsTableCell: UITableViewCell {
     }
     
     func configCell(new: New) {
-        self.lblTime.text = new.title
-        self.lblAuthor.text = new.description
+        self.lblTitle.text = new.title
+        self.lblContent.text = new.description
         self.lblAuthor.text = new.author ?? new.source.name
         self.lblTime.text = new.publishedAt
             .convertToDate()
             .convertToString()
         
-        guard var imageLink = new.urlToImage else { return }
-        var parts = imageLink.split(separator: "?")
-        parts.removeLast()
-        imageLink = parts.joined()
+        guard let imageLink = new.urlToImage else { return }
         let url = URL(string: imageLink)
-        self.imageView?.sd_setImage(with: url, completed: nil)
+        self.imvThumbnail.sd_setImage(with: url, placeholderImage: UIImage(named: "no-image-available"), options: .continueInBackground) { [weak self](image, error, _, _) in
+            guard let _ = image else { return }
+            DispatchQueue.main.async {
+                self?.imvThumbnail.contentMode = .scaleAspectFill
+            }
+        }
     }
     
 }
